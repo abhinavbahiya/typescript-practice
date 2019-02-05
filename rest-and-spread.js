@@ -1,10 +1,6 @@
-function Average2() {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
-    }
+function Average2(...args) {
     var sum = 0;
-    for (var i = 0; i < args.length; i++) {
+    for (let i = 0; i < args.length; i++) {
         sum += args[i];
     }
     var length = args.length;
@@ -19,4 +15,5 @@ console.log(Average2(1, 2));
 console.log(Average2(1, 2, 3, 4, 5));
 console.log(Average2(1, 2, 3, 4, 5, 6, 7, 8, 9));
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(Average2.apply(void 0, arr));
+console.log(Average2(...arr));
+//# sourceMappingURL=rest-and-spread.js.map

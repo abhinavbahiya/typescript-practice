@@ -15,12 +15,12 @@ Add4 = function (a, b) {
     return a + b;
 };
 var Add5;
-Add5 = function (a, b) {
+Add5 = (a, b) => {
     return a + b;
 };
 var Add6;
-Add6 = function (a, b) { return a + b; };
-var Add7 = function (a, b) { return a + b; };
+Add6 = (a, b) => a + b;
+var Add7 = (a, b) => a + b;
 function Display(logic) {
     console.log(logic(2, 3));
 }
@@ -31,13 +31,12 @@ function f1(x, y) {
 Display(f1);
 Display(function (x, y) { return x * y; });
 Display(function (x, y) { return x * y; });
-Display(function (x, y) { return x * y; });
-Display(function (x, y) { return x * y; });
-function Add(a, b) {
-    if (a === void 0) { a = 0; }
-    if (b === void 0) { b = 0; }
+Display((x, y) => { return x * y; });
+Display((x, y) => x * y);
+function Add(a = 0, b = 0) {
     return a + b;
 }
 console.log(Add(2, 3));
 console.log(Add(2));
 console.log(Add());
+//# sourceMappingURL=ts-demo.js.map

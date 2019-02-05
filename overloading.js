@@ -1,8 +1,4 @@
-function Hello() {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
-    }
+function Hello(...args) {
     if (args.length == 0)
         console.log("Hello World!");
     else if (args.length == 1)
@@ -12,3 +8,4 @@ function Hello() {
 }
 Hello();
 Hello("Manish");
+//# sourceMappingURL=overloading.js.map

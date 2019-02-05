@@ -1,13 +1,18 @@
 {
     "compilerOptions": {
-        "target":"es5",
-        "module": "none",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "noEmitOnError": true,
-        "lib": [
+        "target":"es6",             // We can change this any day, this is the targeted code format
+        "module": "commonjs",
+        "moduleResolution": "node", // Can be classic or node based on module option choosed
+        "noImplicitAny": true,      // You aren't allowed to put any as type implicitly.
+        "removeComments": true,     // Remove commennts from js file while compiling ts file.
+        "noEmitOnError": true,      // Don't emit JS files if TS has errors.
+        "sourceMap": true,          // Map file has to be at the same place where your js file is.
+        "lib": [                    // We can access the api's of ESNext versions such as find etc use polyfills for IE
             "dom",
             "es2015"
-        ]
+        ],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        
     }
 }

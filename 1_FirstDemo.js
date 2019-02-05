@@ -1,4 +1,4 @@
-var obj = {
+const obj = {
     id: 4,
     name: "cdc"
 };
@@ -7,3 +7,4 @@ var add = function () {
     return 10;
 };
 var bh;
+//# sourceMappingURL=1_FirstDemo.js.map

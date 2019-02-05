@@ -9,3 +9,4 @@ function reverse(data) {
 }
 console.log(reverse('Abhinav'));
 console.log(reverse(['Abhinav', 'Bahiya', 'JavaScript']));
+//# sourceMappingURL=reverse.js.map
